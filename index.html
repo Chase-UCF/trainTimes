@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Times</title>
+    <link rel="shortcut icon" href="assets/train.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+</head>
+
+<body>
+    <div id="heading" class="container-fluid">
+        <h2 class="text-center col-xs-8 col-xs-offset-2 title">The trains are a comin'
+        <br> Find the train you need to catch</h2></div>
+    <div>
+        <!-- this is the div for the table -->
+        <table class="table table-responsive" id="trainTable">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+        </table>
+    </div>
+    <div class="container-fluid get-user-info">
+        <div id="main-input" class="container-fluid text-center">
+            <h1 id="tName">Add your train!</h1>
+            <form>
+                <label class="col-xs-12 text-center" id="tName"><span class="glyphicon glyphicon-info-sign"></span>Train Name</label>
+                <input id="trainName" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center" type="text">
+                <label class="col-xs-12 text-center" id="tName"><span class="glyphicon glyphicon-globe"></span>Destination</label>
+                <input id="destination" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center" type="text">
+                <label class="col-xs-12 text-center" id="tName"><span class="glyphicon glyphicon-pencil"></span>First Train Time(HH:mm ~ Military Time)</label>
+                <input id="firstTrain" value='' class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center" type="text">
+                <label class="col-xs-12 text-center" id="tName"><span class="glyphicon glyphicon-time"></span>Frequency (min)</label>
+                <input id="frequency" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center" type="text">
+                <button id="submit-button" value='submit' type="button" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 btn text-center">Submit<span class="glyphicon glyphicon-send"></span></button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>
+</body>
+
+</html>
